@@ -25,7 +25,7 @@ npm install
 
 **npx cypress run --env tags="@test"** - This runs any tests that are tagged @test in the project. You can try other tags as well should you wish to.
 
-**npm run test**  - This runs tests on Electron browser in headless mode.
+**npm run test**  - This runs tests on the Electron browser in headless mode.
 
 ### Reporting 
 
@@ -39,10 +39,10 @@ After the test run use
 
 Official Cypress documentation recommends running tests in parallel on CI environment by passing the **--parallel** key to **cypress run** 
 
-This project leverages Cypress CircleCI Orb which is a configuration set in your .circleci/config.yml & runs 2 jobs "Cypress API Tests" &  "UI Tests - Chrome". Please note this is for demonstration purpose only and hasn't been integrated with CicleCI for this project.
+This project leverages Cypress CircleCI Orb which is a configuration set in your .circleci/config.yml & runs 2 jobs "Cypress API Tests" &  "UI Tests - Chrome". Please note this is for demonstration purpose only and hasn't been integrated with CircleCI for this project.
 
 ### Linting 
 
-Prettier , Eslint plugins have been used for this project.
+Prettier, Eslint plugins have been used for this project.
 
 **npm run prettier-format** - This will format your TypeScipt code.
