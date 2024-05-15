@@ -1,7 +1,7 @@
 # About The Project
 
 
-This repo contains e2e Cypress tests written in Gherkin format using Cucumber and step definitions in TypeScript using page object desing pattern.
+This repo contains e2e Cypress tests written in Gherkin format using Cucumber and step definitions in TypeScript using page object design pattern.
 
 UI tests run on a dummy website https://www.saucedemo.com/
 
