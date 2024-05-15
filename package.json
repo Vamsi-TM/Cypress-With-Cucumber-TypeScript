@@ -1,0 +1,30 @@
+{
+  "name": "cypress-with-cucumber-typescript",
+  "version": "1.0.0",
+  "description": "Cypress with cucumber and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "e2e:chrome": "cypress run --browser chrome",
+    "lint": "eslint . --ext .ts",
+    "cy:open": "cypress open",
+    "prettier-format": "prettier --config .prettierrc 'cypress/**/*.ts' --write",
+    "generate-html-report": "node cypress/cucumber-html-report.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "onchange": "^7.1.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.21.2"
+  }
+}
