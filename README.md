@@ -35,7 +35,11 @@ After the test run use
 
 **npm run generate-html-report** - This will generate a html report that is saved in **reports** folder.
 
-### Running tests in parallel 
+### Running tests in parallel locally
+
+**npm run cy:parallel**  - This command will run tests in different threads in parallel 
+
+### Running tests in parallel on CI
 
 Official Cypress documentation recommends running tests in parallel on CI environment by passing the **--parallel** key to **cypress run** 
 

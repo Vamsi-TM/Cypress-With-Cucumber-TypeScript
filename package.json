@@ -9,7 +9,9 @@
     "lint": "eslint . --ext .ts",
     "cy:open": "cypress open",
     "prettier-format": "prettier --config .prettierrc 'cypress/**/*.ts' --write",
-    "generate-html-report": "node cypress/cucumber-html-report.ts"
+    "generate-html-report": "node cypress/cucumber-html-report.ts",
+    "cy:run": "cypress run",
+    "cy:parallel" : "cypress-parallel -s cy:run -t 3 -m false -d 'cypress/e2e/**/*.feature'"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +27,7 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress-parallel": "^0.14.0",
     "esbuild": "^0.21.2"
   }
 }
